@@ -1,0 +1,19 @@
+<div class="repository-list-container">
+  <h1>{{ 'repositoryList.title' | translate }}</h1>
+
+  <div class="repository-list">
+    <app-card *ngFor="let repository of repositoryList" class="repository">
+      <app-card-header>
+        {{repository.name}}
+      </app-card-header>
+      <app-card-body>
+        <app-list>
+          <app-list-item *ngFor="let branch of repository.branchList">
+            <p>{{branch.name}}</p>
+            <p>SHA: {{branch.sha}}</p>
+          </app-list-item>
+        </app-list>
+      </app-card-body>
+    </app-card>
+  </div>
+</div>

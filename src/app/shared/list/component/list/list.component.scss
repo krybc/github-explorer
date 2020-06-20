@@ -1,0 +1,26 @@
+@import "src/assets/scss/variables";
+
+.list-container {
+  margin: 1rem 0;
+
+  ul {
+    border: $list-border-width solid $list-border-color;
+    border-radius: $list-border-radius;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    app-list-item {
+      li {
+        border-top: $list-border-width solid $list-border-color;
+        padding: $list-item-padding-y $list-item-padding-x;
+      }
+
+      &:first-child {
+        li {
+          border-top: none;
+        }
+      }
+    }
+  }
+}

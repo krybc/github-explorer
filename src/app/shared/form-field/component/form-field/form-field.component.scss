@@ -1,0 +1,25 @@
+@import "src/assets/scss/variables";
+
+app-form-field {
+
+  &.form-field-center {
+    .form-field {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .form-field {
+    padding: 1rem;
+    width: 100%;
+
+    label {
+      display: block;
+      font-size: $font-size-sm;
+    }
+
+    input {
+      width: 100%;
+    }
+  }
+}

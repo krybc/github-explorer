@@ -1,0 +1,63 @@
+
+$font-family:               'Quicksand', sans-serif;
+$font-size-base:            14px;
+$font-size-sm:              12px;
+$font-size-lg:              18px;
+
+$primary:                   #19d291;
+$accent:                    #b3880a;
+$success:                   #2cd219;
+$danger:                    #ff0000;
+$white:                     #ffffff;
+$light:                     #dedede;
+$dark:                      #7d7d7d;
+$black:                     #000000;
+
+$border-color:              $light;
+$border-width:              1px;
+$border-radius:             5px;
+$box-shadow:                2px 0px 5px 0px rgba(0,0,0,0.14);
+
+$theme-colors: ();
+$theme-colors: map-merge(
+    (
+      "primary":            $primary,
+      "accent":             $accent,
+      "success":            $success,
+      "danger":             $danger,
+      "light":              $light,
+      "dark":               $dark
+    ),
+    $theme-colors
+);
+
+// Input
+$input-padding-y:           1rem;
+$input-padding-x:           1rem;
+$input-border-color:        $border-color;
+$input-border-width:        $border-width;
+$input-border-radius:       24px;
+
+
+// Button
+$button-padding-y:          $input-padding-y;
+$button-padding-x:          $input-padding-x;
+$button-border-radius:      $input-border-radius;
+
+
+// List
+$list-border-width:         $border-width;
+$list-border-color:         $border-color;
+$list-border-radius:        $border-radius;
+$list-item-padding-y:       .5rem;
+$list-item-padding-x:       .5rem;
+
+// Card
+$card-border-width:         $border-width;
+$card-border-color:         $border-color;
+$card-box-shadow:           $box-shadow;
+$card-border-radius:        $border-radius;
+
+$yiq-contrasted-threshold:  150;
+$yiq-text-dark:             $dark;
+$yiq-text-light:            $white;

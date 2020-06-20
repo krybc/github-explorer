@@ -1,0 +1,12 @@
+
+button {
+  padding: $button-padding-y $button-padding-x;
+  border-radius: $button-border-radius;
+  cursor: pointer;
+}
+
+@each $color, $value in $theme-colors {
+  .btn-#{$color} {
+    @include button($value);
+  }
+}

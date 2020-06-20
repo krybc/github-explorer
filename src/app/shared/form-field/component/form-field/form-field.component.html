@@ -1,0 +1,10 @@
+<div class="form-field">
+    <label *ngIf="label">
+      {{ label }}
+    </label>
+  <ng-container *ngTemplateOutlet="inputContent"></ng-container>
+</div>
+
+<ng-template #inputContent>
+  <ng-content></ng-content>
+</ng-template>

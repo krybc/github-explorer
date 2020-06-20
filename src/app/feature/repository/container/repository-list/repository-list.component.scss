@@ -1,0 +1,17 @@
+.repository-list-container {
+
+  .repository-list {
+    column-count: 3;
+    //display: flex;
+    //flex-wrap: wrap;
+    //justify-content: space-around;
+
+    .repository {
+      break-inside: avoid-column;
+      //flex: 1 1 0px;
+      //flex-basis: 25%;
+      padding: .5rem;
+    }
+  }
+
+}

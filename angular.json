@@ -5,7 +5,32 @@
   "projects": {
     "github-explorer": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss",
+          "spec": false
+        },
+        "@schematics/angular:class": {
+          "spec": false,
+          "skipTests": true
+        },
+        "@schematics/angular:directive": {
+          "spec": false,
+          "skipTests": true
+        },
+        "@schematics/angular:module": {
+          "spec": false,
+          "routing": true
+        },
+        "@schematics/angular:pipe": {
+          "spec": false,
+          "skipTests": true
+        },
+        "@schematics/angular:service": {
+          "spec": false,
+          "skipTests": true
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -21,10 +46,11 @@
             "aot": true,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/manifest.webmanifest"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "scripts": []
           },
@@ -55,7 +81,9 @@
                   "maximumWarning": "6kb",
                   "maximumError": "10kb"
                 }
-              ]
+              ],
+              "serviceWorker": true,
+              "ngswConfigPath": "ngsw-config.json"
             }
           }
         },
@@ -85,10 +113,11 @@
             "karmaConfig": "karma.conf.js",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/manifest.webmanifest"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "scripts": []
           }
@@ -119,6 +148,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "github-explorer"
 }

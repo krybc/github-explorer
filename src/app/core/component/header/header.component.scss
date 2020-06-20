@@ -1,0 +1,22 @@
+@import "src/assets/scss/variables";
+
+.header-container {
+  height: 3rem;
+  width: 100%;
+  background: $primary;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+
+  .brand {
+    font-size: $font-size-lg;
+  }
+
+  .lang {
+
+    span {
+      padding: 0 .5rem;
+      cursor: pointer;
+    }
+  }
+}

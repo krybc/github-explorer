@@ -1,0 +1,23 @@
+@mixin button($bg, $color: color-contrast($bg), $hover-background: darken($bg, 7.5%), $active-background: darken($bg, 10%)) {
+  color: $color;
+  background: $bg;
+  border-color: $bg;
+
+  &:hover {
+    color: $color;
+    background: darken($bg, 10%);
+    border-color: darken($bg, 10%);
+  }
+
+  &:focus,
+  &.focus {
+      box-shadow: $box-shadow, 0 0 0 1px rgba(mix(color-contrast($bg), $bg, 15%), .5);
+  }
+
+  &.disabled,
+  &:disabled {
+    color: $color;
+    background-color: $bg;
+    border: none;
+  }
+}

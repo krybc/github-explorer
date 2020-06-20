@@ -1,0 +1,25 @@
+{
+  "error": {
+    "required": "This field is required",
+    "minLength": "You need to provide more than {value} characters",
+    "maxLength": "You can provide max {value} characters",
+    "min": "You can provide min {value} value",
+    "max": "You can provide max {value} value"
+  },
+  "searchUser": {
+    "title": "Enter username",
+    "form": {
+      "username": {
+        "label": "Username",
+        "placeholder": "Enter username"
+      },
+      "submit": "Show repositories"
+    },
+    "errors": {
+      "notFound": "User not found"
+    }
+  },
+  "repositoryList": {
+    "title": "Repository list"
+  }
+}

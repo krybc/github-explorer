@@ -14,10 +14,22 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@core/*": ["src/app/core/*"],
+      "@api/*": ["src/app/api/*"],
+      "@repository/*": ["src/app/feature/repository/*"]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
     "strictInjectionParameters": true
+  },
+  "rules": {
+    "no-string-literal": true,
+    "parameters-max-number": [true, 10],
+    "cognitive-complexity": [true, 10],
+    "noUnusedParameters": true,
+    "noUnusedLocals": true
   }
 }

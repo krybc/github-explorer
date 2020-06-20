@@ -1,0 +1,25 @@
+{
+  "error": {
+    "required": "Pole jest wymagane",
+    "minLength": "Podaj przynajmniej {value} znaków",
+    "maxLength": "Możesz podać maksymalnie {value} znaków",
+    "min": "Minimalna wartość pola {value}",
+    "max": "Maksymalna wartość pola {value}"
+  },
+  "searchUser": {
+    "title": "Wpisz nazwę użytkownika",
+    "form": {
+      "username": {
+        "label": "Nazwa użytkownika",
+        "placeholder": "Wpisz nazwę użytkownika"
+      },
+      "submit": "Pokaż repozytoria"
+    },
+    "errors": {
+      "notFound": "Nie ma takiego użytkownika"
+    }
+  },
+  "repositoryList": {
+    "title": "Lista repozytoriów"
+  }
+}

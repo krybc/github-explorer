@@ -1,0 +1,13 @@
+<div class="search-form-container">
+  <div class="search-user-wrapper">
+    <h1>{{ 'searchUser.title' | translate }}</h1>
+    <form [formGroup]="form" (submit)="onSubmit()">
+      <app-form-field>
+        <input type="text" formControlName="username" placeholder="{{ 'searchUser.form.username.placeholder' | translate }}">
+      </app-form-field>
+      <app-form-field *ngIf="form.valid" dir="center">
+        <button class="btn-primary">{{ 'searchUser.form.submit' | translate }}</button>
+      </app-form-field>
+    </form>
+  </div>
+</div>

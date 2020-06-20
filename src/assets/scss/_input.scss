@@ -1,0 +1,9 @@
+input {
+  padding: $input-padding-y $input-padding-x;
+  border-radius: $input-border-radius;
+  border: $input-border-width solid $input-border-color;
+
+  &.ng-invalid {
+    border-color: $danger;
+  }
+}
