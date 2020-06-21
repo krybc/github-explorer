@@ -93,6 +93,11 @@ export class ControlErrorsDirective implements OnInit, OnDestroy {
       this.ref = this.container.createComponent(factory);
     }
     this.ref.instance.text = text;
+    if (text) {
+      this.element.classList.add('is-invalid');
+    } else {
+      this.element.classList.remove('is-invalid');
+    }
   }
 
   ngOnDestroy() {
