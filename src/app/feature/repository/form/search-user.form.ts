@@ -16,7 +16,7 @@ export class SearchUserForm {
   public init(): FormGroup {
     this.form = this.formBuilder.group({
       username: [null, {
-        validators: [Validators.required, Validators.minLength(5)],
+        validators: [Validators.required],
         asyncValidators: this.formValidator.checkUsernameAvailable.bind(this.formValidator)
       }]
     });
