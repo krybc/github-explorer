@@ -14,6 +14,7 @@ export class LanguageState {
   constructor(
     private translate: TranslateService
   ) {
+    this.language$ = this.languageSubject.asObservable();
     if (localStorage.getItem(this.languageKey)) {
       this.language = localStorage.getItem(this.languageKey);
     } else {
@@ -24,6 +25,7 @@ export class LanguageState {
   set language(language: string) {
     this._language = language;
     this.translate.use(language);
+    this.languageSubject.next(language);
     localStorage.setItem(this.languageKey, language);
   }
 

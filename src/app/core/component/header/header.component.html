@@ -1,9 +1,9 @@
 <div class="header-container">
-  <span class="brand">
+  <span class="brand" [routerLink]="['/']">
     Github Explorer
   </span>
   <div class="lang">
-    <span (click)="changeLanguage('pl')">PL</span>
-    <span (click)="changeLanguage('en')">EN</span>
+    <span (click)="changeLanguage('pl')" [ngClass]="{'selected': language === 'pl'}">PL</span>
+    <span (click)="changeLanguage('en')" [ngClass]="{'selected': language === 'en'}">EN</span>
   </div>
 </div>
