@@ -1,7 +1,7 @@
 @import "src/assets/scss/variables";
 
 .card {
-  border: $card-border-width solid $card-border-color;
+  border: $card-border;
   box-shadow: $card-box-shadow;
   padding: 1rem;
   border-radius: $card-border-radius;

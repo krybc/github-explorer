@@ -2,15 +2,12 @@
 
   .repository-list {
     column-count: 3;
-    //display: flex;
-    //flex-wrap: wrap;
-    //justify-content: space-around;
+    column-gap: 3rem;
 
     .repository {
       break-inside: avoid-column;
-      //flex: 1 1 0px;
-      //flex-basis: 25%;
-      padding: .5rem;
+      display: block;
+      padding: 1.5rem 0;
     }
   }
 

@@ -15,8 +15,8 @@ $black:                     #000000;
 
 $border-color:              $light;
 $border-width:              1px;
-$border-radius:             5px;
-$box-shadow:                2px 0px 5px 0px rgba(0,0,0,0.14);
+$border-radius:             10px;
+$box-shadow:                0px 0px 10px 0px rgba(115,115,115,0.20);
 
 $theme-colors: ();
 $theme-colors: map-merge(
@@ -55,6 +55,7 @@ $list-item-padding-x:       .5rem;
 // Card
 $card-border-width:         $border-width;
 $card-border-color:         $border-color;
+$card-border:               none;
 $card-box-shadow:           $box-shadow;
 $card-border-radius:        $border-radius;
 
