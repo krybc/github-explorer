@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {LanguageState} from '@core/util/i18n/language.state';
+import {LanguageEnum} from '@core/enum/language.enum';
 
 @Component({
   selector: 'app-header',
@@ -8,6 +9,7 @@ import {LanguageState} from '@core/util/i18n/language.state';
 })
 export class HeaderComponent implements OnInit {
   language: string;
+  languageList = LanguageEnum;
 
   constructor(
     private languageState: LanguageState,

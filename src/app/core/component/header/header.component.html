@@ -3,7 +3,7 @@
     Github Explorer
   </span>
   <div class="lang">
-    <span (click)="changeLanguage('pl')" [ngClass]="{'selected': language === 'pl'}">PL</span>
-    <span (click)="changeLanguage('en')" [ngClass]="{'selected': language === 'en'}">EN</span>
+    <span (click)="changeLanguage(languageList.pl)" [ngClass]="{'selected': language === languageList.pl}">PL</span>
+    <span (click)="changeLanguage(languageList.en)" [ngClass]="{'selected': language === languageList.en}">EN</span>
   </div>
 </div>
